@@ -2,3 +2,17 @@
 #imagem{
     width: 100%;
 }
+
+#imagemdecesar{
+    position: absolute;
+    top: 52%;
+    left: 10%;
+    border: 4px solid rgb(34, 233, 67);
+}
+
+#imagembase{
+    position: absolute;
+    top: 52%;
+    right: 10%;
+    border: 4px solid rgb(248, 249, 250);
+}
