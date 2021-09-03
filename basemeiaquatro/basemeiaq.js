@@ -1,11 +1,11 @@
 var formBase = document.getElementById("baseenvio")
 formBase.addEventListener("submit", function(event) {
     event.preventDefault();
-    return funfandoBase64();
+    return funfandoBaseMq();
 
 })
 
-function funfandoBase64() {
+function funfandoBaseMq() {
 
     var dadoBase = document.getElementById("inputbasemq").value
     if (document.getElementById('codificarbase').checked) {
