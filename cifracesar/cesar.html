@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifra de Cesar</title>
+    <link rel="stylesheet" href="cesar.css">
+    
+</head>
+<body>
+    <main>
+        <h1>Criptografar</h1>
+        <form id="cifrador" autocomplete="off">
+            <input id="input-original"  placeholder="Digite um texto" type="text" >
+        </form>
+        <div id="resultado"></div>
+        <div class="rango">
+            <input id="rango" type="range" value="1" min="1" max="2" oninput="this.nextElementSibling.value = this.value">
+            <output>1</output>
+
+        </div>
+
+        <h1>Descriptografar</h1>
+        <form id="decifrador" autocomplete="off">
+            <input id="input-secundario" spellcheck="false" placeholder="Digite um texto" type="text" name="text" >
+        </form>
+        <div id="resultado2"></div>
+        <div class="rango">
+            <input id="rango" type="range" value="1" min="1" max="2" oninput="this.nextElementSibling.value = this.value">
+            <output>1</output>
+
+        </div>
+    </main>
+    
+    <img id="imagem" src="../../cifra-de-cesar/cifracesar/cifras.png">
+
+    <script src="../cesarbase.js"></script>
+</body>
+</html>
