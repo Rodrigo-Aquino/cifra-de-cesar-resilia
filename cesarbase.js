@@ -79,20 +79,3 @@ function decifraCesar() {
         // alert(resultado)
     }
 }
-
-var formBase = document.getElementById("baseEnvio")
-formBase.addEventListener("submit", function(event) {
-    event.preventDefault();
-    return funfandoBase64();
-
-})
-
-function funfandoBase64() {
-
-    var dadoBase = document.getElementById("inputBase64").value
-    if (document.getElementById('codificarBase').checked) {
-        outputBase.innerHTML = atob(dadoBase);
-    } else if (document.getElementById("decodificarBase").checked) {
-        outputBase.innerHTML = btoa(dadoBase);
-    }
-}
